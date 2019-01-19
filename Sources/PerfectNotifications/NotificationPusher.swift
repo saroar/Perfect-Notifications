@@ -94,9 +94,9 @@ public typealias APNSUUID = Foundation.UUID
 
 typealias IOSNotificationItem = APNSNotificationItem
 
-private let iosNotificationPort = UInt16(443)
-private let iosNotificationDevelopmentHost = "api.development.push.apple.com"
-private let iosNotificationProductionHost = "api.push.apple.com"
+private let iosNotificationPort = UInt16(2195)
+private let iosNotificationDevelopmentHost = "apn://gateway.sandbox.push.apple.com"
+private let iosNotificationProductionHost = "apn://gateway.push.apple.com"
 
 enum ProductionStatus {
 	case development, production, test(String, Int)
